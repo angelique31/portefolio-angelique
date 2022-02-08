@@ -5,6 +5,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -24,8 +25,7 @@ nav{
     background:#FFFAE1;
     padding: 15px;
     color: black;
-    position: fixed;
-    opacity: 0.9;
+    position: fixed; 
     z-index: 3;
 }
 
@@ -104,7 +104,6 @@ h3{
     background-color: #e8eaf3;
     height: 350px;
     padding-left: 20px;
-    /* flex-wrap: wrap; */
 }
 #section2 img{
     height: 150px;
@@ -140,7 +139,6 @@ h3{
     font-size: 30px;
     position: absolute;
     content: "";
-    /* display: block; */
     border-radius: 15px;
     color: rgb(133, 133, 247);
     left: -16px;    
@@ -160,7 +158,6 @@ h3{
     font-size: 30px;
     position: absolute;
     content: "";
-    /* display: block; */
     border-radius: 15px;
     color: rgb(133, 133, 247);
     left: -16px;    
@@ -192,7 +189,6 @@ h3{
 }
 input{
     padding: 10px 25px;
-    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     border-radius: 10px;
     border: none;
@@ -258,6 +254,13 @@ textarea{
 #section4 p{
     font-size: 1.2rem;
     color: white;
+}
+#section4 a{
+    color: white;
+}
+
+#section4 a:hover{
+    color :#a1c4fd
 }
 
 .adresse{
@@ -330,7 +333,7 @@ h4{
 
 }
 
-@media  all and (max-width:320px){
+@media  all and (max-width:714px){
     nav li{
         padding: 1px 20px;
     }
