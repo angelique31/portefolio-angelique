@@ -96,7 +96,11 @@ h3{
     width: 20%;
     margin-right: 20px;
     box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
-    
+    transition: 0.8s;    
+}
+
+#section1 img:hover{
+    transform: scale(1.05);
 }
 
 /**************section 2 Formation************/
@@ -111,6 +115,10 @@ h3{
     margin-right: 80px;
     float: right;
     box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+    transition: 0.8s;
+}
+#section2 img:hover{
+    transform: scale(1.05);
 }
 
 #section2 h3{
@@ -130,9 +138,15 @@ h3{
     width: 60%;
     border-radius: 20px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background: #F1F2F6;
     box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);
+    transition: 0.8s;
+    
+}
+
+.ecole-bordure:hover{
+    transform: scale(1.08);
 }
 
 #section2 .fa-graduation-cap{
@@ -152,6 +166,11 @@ h3{
     margin-bottom: 20px;
     background: #F1F2F6;
     box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);
+    transition: 0.8s;
+}
+
+#section2 .travail-bordure:hover{
+    transform: scale(1.08);
 }
 
 #section2 .fa-hospital{
@@ -274,7 +293,7 @@ h4{
 }
 
  p::selection{
-    background: #fdc1fd;
+    background: rgb(133, 133, 247);;
 } 
 
 /***********Responsive*************/
