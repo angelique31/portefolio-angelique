@@ -25,7 +25,9 @@ nav{
     background:#FFFAE1;
     padding: 15px;
     color: black;
-    position: fixed; 
+    position: fixed;
+    top: -65px; /*la nav barre est tout en haut, cachée sous la barre de recherche google*/ 
+    transition: 0.4s;/*pour que la navbar apparaisse moins brusquement*/
     z-index: 3;
 }
 
@@ -72,7 +74,7 @@ h1{
 h3{
     text-align: center;
     font-size: 2.5rem;
-    padding-top: 50px;
+    padding-top: 55px;
     font-family: 'Dancing Script', cursive;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.424);
 }
@@ -86,17 +88,20 @@ h3{
     text-align: center;
     font-size: 1.5rem;
     width: 70%;
-    margin-right: 30px;/*pour décoller le texte de l'image*/
+    margin-right: 70px;/*pour décoller le texte de l'image*/
+    margin-top: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 
 #section1 img{
-    height: 150px;
-    width: 20%;
+    object-fit: cover;
+    height: 200px;
+    width: 15%;
     margin-right: 20px;
     box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
-    transition: 0.8s;    
+    transition: 0.8s;  
+    margin-bottom: 30px;  
 }
 
 #section1 img:hover{
@@ -152,7 +157,6 @@ h3{
 #section2 .fa-graduation-cap{
     font-size: 30px;
     position: absolute;
-    content: "";
     border-radius: 15px;
     color: rgb(133, 133, 247);
     left: -16px;    
