@@ -31,9 +31,10 @@ nav{
     padding: 15px;
     color: black;
     position: fixed;
-    /* top: -65px; la nav barre est tout en haut, cachée sous la barre de recherche google  */
+    top: -65px; /*la nav barre est tout en haut, cachée sous la barre de recherche google*/
     transition: 0.4s;/*pour que la navbar apparaisse moins brusquement*/
     z-index: 3;
+    
 }
 
 
@@ -49,6 +50,7 @@ nav li a{
     color: black;
     font-family: 'Quintessential', cursive;
     font-weight: 800;
+    /* font-size: 1rem; */
 }
 
 nav li a:hover{
@@ -142,6 +144,7 @@ h3{
     border-radius: 20px;
     position: relative;
     margin-bottom: 20px;
+    padding: 15px;
     background: #F1F2F6;
     box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);  
 }
@@ -160,6 +163,7 @@ h3{
     border-radius: 20px;
     position: relative;
     margin-bottom: 20px;
+    padding: 15px;
     background: #F1F2F6;
     box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);
 }
@@ -337,11 +341,16 @@ h4{
         height: 100px;
         width: 15%;
         margin-top: 15px;
+        margin-right: 0;
+    }
+    .section1 p{
+        margin-right: 0;
     }
     .section2 img{
         float: none;
         height: 100px;
         width: 15%;
+        margin-right: 0;
     }
     .section2 p{
         font-size: 0.8rem;
@@ -357,54 +366,50 @@ h4{
     }
     .section2 .ecole-bordure{
         margin-top: 40px;
-        
+        width: 70%;    
+    }
+
+    .section2 .travail-bordure{
+        width: 70%; 
+    }
+    .section3 img{
+        height: 180px;
     }
 }
 
 @media  all and (max-width:714px){
+    nav ul{
+        flex-direction: column;
+    }
     nav li{
         padding: 1px 20px;
     }
     
     nav li a{
-        font-size: 00.8rem;
-    }
-    h3{
         font-size: 1.2rem;
     }
-    #image-de-fond{
-        width: 100vh;
+    h3{
+        font-size: 2rem;
     }
 
-    #section1{
-        width: 100vh;
-    }
     .section1 img{
-        height: auto;
+        height: 90px;
+        width: 20%;
     }
-    .section2{
-        width: 100vh;
-    }
+    
     .section2 h3 {
         padding-bottom: 20px;
     }
     .section2 img{
-        height: auto;
-       
+        height: 90px;
+        width: 20%;
     }
 
-    .section3{
-        width: 100vh;
-    }
-
-    .section4{
-        width: 100vh;    
-    }
     .section4 h4{
-       font-size: 0.8rem;     
+       font-size: 1.2rem;     
     }
     .section4 p{
-        font-size: 0.8rem;     
+        font-size: 1.2rem;     
     }
 
     input{
@@ -423,4 +428,33 @@ h4{
     .content{
         justify-content: space-around;
     }
+}
+
+@media  all and (max-width:555px){
+    .section1{
+        height: 500px;
+    }
+    .section2 .ecole-bordure{
+        width: 100%;    
+    }
+
+    .section2 .travail-bordure{
+        width: 100%; 
+    }
+
+    .section3 .flex-image{
+        flex-direction: column;
+        align-items: center;
+     }
+     .section3 img{
+         margin-top: 30px;
+     }
+     .section3 h3{
+         font-size: 2rem;
+     }
+     .section4 .content{
+         flex-direction: column;
+         align-items: center;
+     }
+
 }
