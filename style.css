@@ -331,6 +331,11 @@ h4{
 
 
 @media  all and (max-width:794px){
+    nav{
+        top: -500px;
+    }
+    
+    
     .section1 .flex{
         flex-direction: column;
         align-items: center;
