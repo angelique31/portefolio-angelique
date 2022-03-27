@@ -14,10 +14,15 @@ html{
     text-decoration: none;
 }
 
+h3{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
 /********Section 1 barre de navigation******/
 ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav{
@@ -26,26 +31,28 @@ nav{
     padding: 15px;
     color: black;
     position: fixed;
-    top: -65px; /*la nav barre est tout en haut, cachée sous la barre de recherche google*/ 
+    /* top: -65px; la nav barre est tout en haut, cachée sous la barre de recherche google  */
     transition: 0.4s;/*pour que la navbar apparaisse moins brusquement*/
     z-index: 3;
 }
 
-nav li{
-    padding: 5px 20px;
-    background: rgb(133, 133, 247);
-    border-radius: 15px;
-    transition: 0.3s ease-in-out; 
-}
 
+nav li{
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
 nav li:hover{   
     opacity: 0.8;
     transform: scale(1.07); 
-   
 }
 nav li a{
     color: black;
     font-family: 'Quintessential', cursive;
+    font-weight: 800;
+}
+
+nav li a:hover{
+    color: rgb(5, 66, 179);
 }
 /***********Image de fond**************/
 #image-de-fond{
@@ -53,6 +60,7 @@ nav li a{
     background-attachment: fixed;
     background-size: cover;
     height: 800px;
+    /* width: 100%; */
 }
 
 h1{
@@ -63,9 +71,10 @@ h1{
     font-family: 'Dancing Script', cursive;
     margin-right: 20px;
     text-shadow: 1px 3px 2px black;
+    
 }
 /**************section 1 A propos*********/
-#section1{
+.section1{
    background: #FFFAE1;
    height: 400px;
    padding-left: 20px;
@@ -73,20 +82,18 @@ h1{
 
 h3{
     text-align: center;
-    font-size: 2.5rem;
     padding-top: 55px;
-    font-family: 'Dancing Script', cursive;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.424);
 }
 
-#section1 .flex{
+.section1 .flex{
     display: flex;
     margin-top: 50px;
 }
 
-#section1 p{
+.section1 p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 70%;
     margin-right: 70px;/*pour décoller le texte de l'image*/
     margin-top: 40px;
@@ -94,67 +101,52 @@ h3{
     font-weight: 600;
 }
 
-#section1 img{
+.section1 img{
     object-fit: cover;
     height: 200px;
     width: 15%;
     margin-right: 20px;
-    box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
-    transition: 0.8s;  
+    box-shadow: 4px 7px 6px 0px rgb(211 202 202 / 75%); 
     margin-bottom: 30px;  
 }
 
-#section1 img:hover{
-    transform: scale(1.05);
-}
-
 /**************section 2 Formation************/
-#section2{
+.section2{
     background-color: #e8eaf3;
-    height: 350px;
+    height: 600px;
     padding-left: 20px;
 }
-#section2 img{
+.section2 img{
     height: 150px;
     width: 20%;
     margin-right: 80px;
     float: right;
-    box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
-    transition: 0.8s;
-}
-#section2 img:hover{
-    transform: scale(1.05);
+    box-shadow: 4px 7px 6px 0px rgb(211 202 202 / 75%);
 }
 
-#section2 h3{
+.section2 h3{
     padding-bottom: 50px;
 }
 
-#section2 p{
-    font-size: 1.4rem;
+.section2 p{
+    font-size: 1rem;
     width: 80%;
     margin-left: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 
-.ecole-bordure{
+.section2 .ecole-bordure{
     border: 2px solid transparent;
     width: 60%;
     border-radius: 20px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background: #F1F2F6;
-    box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);
-    transition: 0.8s;
-    
+    box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);  
 }
 
-.ecole-bordure:hover{
-    transform: scale(1.08);
-}
-
-#section2 .fa-graduation-cap{
+.section2 .fa-graduation-cap{
     font-size: 30px;
     position: absolute;
     border-radius: 15px;
@@ -162,7 +154,7 @@ h3{
     left: -16px;    
 }
 
-#section2 .travail-bordure{
+.section2 .travail-bordure{
     border: 2px solid transparent;
     width: 60%;
     border-radius: 20px;
@@ -170,14 +162,9 @@ h3{
     margin-bottom: 20px;
     background: #F1F2F6;
     box-shadow: 6px 6px 28px -1px rgba(133, 133, 247, 0.644);
-    transition: 0.8s;
 }
 
-#section2 .travail-bordure:hover{
-    transform: scale(1.08);
-}
-
-#section2 .fa-hospital{
+.section2 .fa-hospital{
     font-size: 30px;
     position: absolute;
     content: "";
@@ -186,19 +173,40 @@ h3{
     left: -16px;    
 }
 
+.section2 .experience{
+    margin-top: 80px;
+}
+
 /************section 3 Réalisations***********/
-#section3{
-    height: 350px;
+.section3{
+    height: 600px;
     background: #F1F2F6;
+}
+.section3 img{
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 7px 6px 0px rgb(211 202 202 / 75%);
+    margin-top: 100px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.section3 img:hover{
+    transform: scale(1.08);
+}
+
+.section3 .flex-image{
+    display: flex;
+    justify-content: space-evenly;
 }
 /**********section 4 Contact*********/
 
-#section4{
+.section4{
     height: 100vh;
     background: rgb(78, 76, 76);
 }
 
-#section4 h3{
+.section4 h3{
     margin-bottom: 50px;
     text-align: center;
     color: white   
@@ -274,15 +282,15 @@ textarea{
    margin-top: 50px;
 }
 
-#section4 p{
+.section4 p{
     font-size: 1.2rem;
     color: white;
 }
-#section4 a{
+.section4 a{
     color: white;
 }
 
-#section4 a:hover{
+.section4 a:hover{
     color :#a1c4fd
 }
 
@@ -302,58 +310,55 @@ h4{
 
 /***********Responsive*************/
 @media  all and (max-width:946px){
-    ul{
-        flex-direction: column;
-        width: 200px;
-        text-align: center;
-    }
-    li{
-        margin-bottom: 10px;
-    }
-    #section1 p{
+    
+    .section1 p{
         font-size: 1rem;
         
     }
-    #section1 h3{
+    .section1 h3{
         font-size: 1.5rem;
         padding-top: 20px;
     }
-    #section2 p{
+    .section2 p{
         font-size: 1rem;
         width: 80%;
-        font-weight: 300;
     }
 }
 
+
 @media  all and (max-width:794px){
-    #section1 .flex{
+    .section1 .flex{
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
 
-    #section1 img{
+    .section1 img{
         height: 100px;
         width: 15%;
         margin-top: 15px;
     }
-    #section2 img{
+    .section2 img{
         float: none;
         height: 100px;
         width: 15%;
     }
-    #section2 p{
+    .section2 p{
         font-size: 0.8rem;
     }
 
-    #section2 h3{
+    .section2 h3{
         font-size: 1.5rem;
+        padding-top: 20px;
     }
 
-    #section2 .flex1{
+    .section2 .flex1{
        text-align: center;
     }
-
+    .section2 .ecole-bordure{
+        margin-top: 40px;
+        
+    }
 }
 
 @media  all and (max-width:714px){
@@ -374,31 +379,31 @@ h4{
     #section1{
         width: 100vh;
     }
-    #section1 img{
+    .section1 img{
         height: auto;
     }
-    #section2{
+    .section2{
         width: 100vh;
     }
-    #section2 h3 {
+    .section2 h3 {
         padding-bottom: 20px;
     }
-    #section2 img{
+    .section2 img{
         height: auto;
        
     }
 
-    #section3{
+    .section3{
         width: 100vh;
     }
 
-    #section4{
+    .section4{
         width: 100vh;    
     }
-    #section4 h4{
+    .section4 h4{
        font-size: 0.8rem;     
     }
-    #section4 p{
+    .section4 p{
         font-size: 0.8rem;     
     }
 
